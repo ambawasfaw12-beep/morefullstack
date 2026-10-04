@@ -1,0 +1,23 @@
+### 1. Get All Tasks
+GET http://localhost:5000/api/tasks
+
+### 2. Create a New Task (Tests bodyParser)
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Master Native Node.js Middleware",
+  "completed": false
+}
+
+### 3. Update an Existing Task (Tests PUT with bodyParser)
+PUT http://localhost:5000/api/tasks/3
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+### 4. Delete a Task
+DELETE http://localhost:5000/api/tasks/3
