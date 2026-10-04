@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#habits">Habits</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="header">Yoseph Ambaw — Full-Stack Engineering Journey</h1>
+    </header>
+
+    <main>
+        <section id="mission">
+            <h2>Engineering Mission</h2>
+            <p>I am learning full-stack development to build production-grade software and achieve
+                <strong>financial</strong> independence to support my family.
+            </p>
+            <p>My goal is to master core engineering fundamentals from scratch so I am <em>fully job-ready by the end of
+                    2019 E.C.</em></p>
+        </section>
+
+        <section id="habits">
+            <h2>Daily Execution Habits</h2>
+            <ol>
+                <li>Code for a minimum of 3 hours every day without shortcuts.</li>
+                <li>Read technical documentation and understand the underlying mechanics before writing solutions.</li>
+                <li>Complete every assignment, review, and exam with production-grade quality.</li>
+            </ol>
+        </section>
+
+        <section id="resources">
+            <h2>Essential Resources</h2>
+            <p>
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">
+                    Visit MDN Documentation
+                </a>
+            </p>
+            <div class="profile-container">
+                <img src="photo_2026-10-01_15-06-21.jpg" alt="Portrait photo of Yoseph Ambaw working at a desk">
+                <span class="status-badge">Active</span>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Creating clean, modern, and accessible user interface layouts.</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>Building high-performance full-stack web applications.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO & Optimization</h3>
+                    <p>Improving site speed, accessiblity, and search performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Student Registration Form</h2>
+            <form action="#" method="POST" class="registration-form">
+
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullname" id="fullName" required>
+
+                <label for="emailAddress">Email Address</label>
+                <input type="email" name="emailaddress" id="emailAddress" required>
+
+                <label for="targetGoal">Target Goal</label>
+                <select name="targetgoal" id="targetGoal">
+                    <option value="remote">Remote Engineering</option>
+                    <option value="freelance">Freelance Web Dev</option>
+                    <option value="architect">System Architect</option>
+                </select>
+
+                <label for="commitmentMessage">Commitment Message</label>
+                <textarea name="commitmentmessage" id="commitmentMessage"></textarea>
+
+                <button type="submit">Register for Course</button>
+            </form>
+        </section>
+
+        <ul class="skill-list">
+
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>Written by Yoseph Ambaw. Built with Semantic HTML5.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

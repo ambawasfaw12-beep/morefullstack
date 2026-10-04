@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryfont: sans-serif;
+    --background: #f8fafc;
+    --hederandfooterbg: #0f172a;
+    --headrandfootercolor: #ffffff;
+    --linkcolor: #e2e8f0;
+    --link-hover: #38bdf8;
+    --btncolor: #47a6ff;
+    --btncolor-hover: #148eff;
+}
+
+body {
+    font-family: var(--primaryfont);
+    line-height: 1.6;
+    background-color: var(--background);
+}
+
+header,
+footer {
+    background-color: var(--hederandfooterbg);
+    color: var(--headrandfootercolor);
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: var(--headrandfootercolor);
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+nav {
+    border-bottom: 1px solid #1e293b;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--linkcolor);
+    font-size: 1.3rem;
+}
+
+.nav-list a:hover {
+    color: var(--link-hover);
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    cursor: pointer;
+    background: var(--btncolor);
+    color: white;
+    max-width: 250px;
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--btncolor-hover);
+}
+
+.card-container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    /* flex: 1 1 220px; this make each card grow and shirnk equally if needed and have an ideal base width of 220px*/
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #22c55e;
+    color: var(--headrandfootercolor);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+}
